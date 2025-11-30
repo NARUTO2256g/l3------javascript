@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ACP-Loop and Method</title>
+</head>
+
+<body>
+    <h1>ACP-Loop and Method</h1>
+
+    <p id="numbers"></p>
+    <p id="random"></p>
+    <p id="today"></p>
+
+    <script>
+        // Numbers: 1 2 3 4 5
+        let numsText = "Numbers: ";
+        for (let i = 1; i <= 5; i++) {
+            numsText += i + " ";
+        }
+        document.getElementById("numbers").textContent = numsText;
+
+        // Random value between 1 and 5
+        const randomValue = Math.floor(Math.random() * 5) + 1;
+        document.getElementById("random").textContent =
+            "The random value is " + randomValue;
+
+        // Today’s date and time
+        const now = new Date();
+        document.getElementById("today").textContent =
+            "Today is " + now.toString();
+    </script>
+</body>
+
+</html>
